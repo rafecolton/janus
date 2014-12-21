@@ -36,3 +36,12 @@ exe 'source ' . g:janus_vim_path . '/core/plugins.vim'
 call janus#load_pathogen()
 
 " .vimrc.after is loaded after the plugins have loaded
+"
+
+" FOR VUNDLER
+set rtp+=~/.vim/bundle/vundle/
+call vundle#rc()
+
+Bundle 'gmarik/vundle'
+"Bundle 'chase/vim-ansible-yaml'
+Bundle 'cespare/vim-toml'
